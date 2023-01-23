@@ -2,14 +2,18 @@ import React from "react";
 import "./event_list.css";
 
 function Events_list_item({ id, location, date, time, gender, name }) {
+  // function to store selected items data to local-storage.
   function send_selected_data() {
     localStorage.setItem(
       "selected_user",
       JSON.stringify({ id, location, date, time, gender, name })
     );
+
+    // dispatching event.
     const event = new Event("storage");
     dispatchEvent(event);
 
+    // style manipulation of event lists.
     const li = document.querySelectorAll("li");
     li.forEach(
       (elem) => (

@@ -1,11 +1,24 @@
 .events {
-  margin: 0.2rem;
+  margin: 0.6rem;
   background-color: white;
   overflow: scroll;
   height: 92vh;
 }
 
+.event {
+  margin: 0 0.6rem;
+}
+
 .events > h3 {
   margin: 3px 0;
   margin-left: 1.3rem;
+}
+
+.head {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+  height: 5vh;
 }

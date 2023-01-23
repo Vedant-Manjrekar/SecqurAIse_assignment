@@ -4,19 +4,23 @@ import logo from "../../assets/SecqurAIse_logo.webp";
 import { FaSearch } from "react-icons/fa";
 
 function Navbar() {
+  // state to store user data
   const [userData, setUserData] = useState();
 
+  // fetching data from local storage once change in storage detected.
   window.addEventListener("storage", () => {
     const userData = JSON.parse(localStorage.getItem("user_data"));
     setUserData(userData);
   });
 
+  // function to count male users.
   function countMale(data) {
     const male = data?.filter((elem) => elem.Gender == "Male");
 
     return male?.length;
   }
 
+  // function to count female users.
   function countFemale(data) {
     const female = data?.filter((elem) => elem.Gender == "Female");
 
