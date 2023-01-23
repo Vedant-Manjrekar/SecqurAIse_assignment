@@ -165,7 +165,7 @@ function Details() {
         {/* Image */}
         {data ? (
           <img
-            src={`/src/assets/Images/${data?.name}.jpg`}
+            src={`/Images/${data?.name}.jpg`}
             alt="User Image"
             className="image"
           />
