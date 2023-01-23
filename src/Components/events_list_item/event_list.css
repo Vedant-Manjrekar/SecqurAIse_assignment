@@ -1,0 +1,16 @@
+.events_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 0.4rem;
+  margin: 0.8rem 1rem;
+  background-color: #d9d9d9;
+  cursor: pointer;
+}
+
+.date_time {
+  text-align: right;
+}
+
+.events_list > p {
+  margin: 0.2rem 0;
+}

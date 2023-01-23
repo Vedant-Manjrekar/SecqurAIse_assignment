@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  height: -webkit-fill-available;
+}
+
+#root {
+  height: -webkit-fill-available;
+}
+
+.App {
+  height: -webkit-fill-available;
+}
